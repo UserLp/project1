@@ -1,12 +1,10 @@
-var oLi = document.getElementsByTagName("li");
-var oBox = document.getElementsByClassName("box");
+var oP = document.getElementById("options");
+var oLi = document.getElementById("list");
+var oLi = oL.getElementsByTagName("li")
+var oLi2 = oP.getElementsByTagName("li");
 for(var i=0;i<oLi.length;i++){
-    oLi[i].onclick = function(){
-        console.log("q");
-        console.log(1);
-        for(var i=0;i<oBox.length;i++){
-            oBox[i].style.display="none";
-        }
-        oBox[this.index].style.display="block";
+    oLi[i].index = i;
+    for(var k=0;k<oLi2.length;k++){
+    console.log(1)
     }
 }

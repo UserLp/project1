@@ -2,45 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <style>
-        .list{
-            height: 800px;
-            background: red;
-            border: 1px solid red;
-        }
-        .list{
-            width:400px;
-            height:900px;
-            border:1px solid red;
-            background:#ab956d;
-        }
-        ol{
-            width: 500px;
-            height: 600px;
-            background: gray
-        }
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      ul{
+          list-style: none;
+      }
+      #box{
+          width: 400px;
+          height: 300px;
+          border: 1px solid #ccc;
+          margin: 0 auto;
+      }
+      #options{
+          width: 400px;
+          height:50px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+      }
+      #options li{
+          flex: 1;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      #options li.actived{
+          color: red;
+      }
+      #list{
+          width: 400px;
+          height: 300px;
+
+      }
+      #list li{
+          display: none;
+          text-align: center;
+          line-height: 300px;
+      }
+      #list li.active{
+          display: block;
+      }
     </style>
 </head>
 <body>
     <div id="box">
-       
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-          <ul class="list">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li>hhhhhhhh</li>
-
+        <ul id="options">
+            <li class="actived">第一项</li>
+            <li>第二项</li>
+            <li>第三项</li>
         </ul>
-        <ol class="123123123123">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
+        <ul id="list">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
     </div>
 </body>
+<script src="index.js"></script>
 </html>
